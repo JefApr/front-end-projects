@@ -1,0 +1,87 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%); /*Primary Text*/
+    --soft-red: hsl(14, 88%, 65%);
+
+    --soft-violet: hsl(273, 75%, 66%); /*Gradient background*/
+    --soft-blue: hsl(240, 73%, 65%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%); /*Neutral text*/
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --light-grayish-blue: hsl(240, 5%, 91%); /*Dividers*/
+}
+
+body {
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-family: 'Kumbh Sans';
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 14px;
+}
+
+.illustration,
+.illustration-shadow {
+    position: absolute;
+}
+
+.illustration {
+    margin-top: 40px;
+    margin-left: -15px;
+}
+
+.illustration-shadow {
+    margin-top: 155px;
+}
+
+.card {
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-title {
+    margin-top: 130px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.accordion {
+    width: 90%;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: var(--very-dark-desaturated-blue);
+}
+
+/****************************************************/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
