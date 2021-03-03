@@ -34,22 +34,21 @@ body {
     font-size: 12px;
 }
 
-.illustration,
-.illustration-shadow {
+.illustration-mobile,
+.illustration-shadow-mobile {
     position: absolute;
 }
 
-.illustration {
+.illustration-mobile {
     margin-top: 40px;
     margin-left: -15px;
 }
 
-.illustration-shadow {
+.illustration-shadow-mobile {
     margin-top: 155px;
 }
 
 .card {
-    width: 80%;
     background-color: white;
     border-radius: 20px;
     margin: 150px 25px 85px 25px;
@@ -59,6 +58,10 @@ body {
     justify-content: flex-start;
     align-items: center;
     box-shadow: 0px 16px 20px var(--shadow-color);
+}
+
+.card-illustration {
+    display: none;
 }
 
 .card-title {
@@ -111,4 +114,19 @@ body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+    .illustration-mobile,
+    .illustration-shadow-mobile {
+        display: none;
+    }
+
+    .card {
+        margin: 175px 90px 175px 140px;
+    }
+
+    .card-illustration {
+        display: flex;
+    }
 }
